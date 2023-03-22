@@ -1,0 +1,25 @@
+﻿@page
+@model Exercise.WebApp.Pages.Model1WithLogin
+@{
+}
+
+<div>
+    <h1>Model1 with Login</h1>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>DenyUnlessLoggedIn</td>
+                <td>SomeOtherField</td>
+                <td>TagFromServer</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model?.Item?.DenyUnlessLoggedIn</td>
+                <td>@Model?.Item?.SomeOtherField</td>
+                <td>@Model?.Item?.TagFromServer</td>
+            </tr>
+        </tbody>
+    </table>    
+</div>

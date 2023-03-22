@@ -1,0 +1,19 @@
+version: '3.4'
+
+# Comment
+
+services:
+  fph.exercise.webapp:
+    image: sharad/fph-exercise-webapp:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: Exercise.WebApp/Dockerfile
+    depends_on:
+      - fph.exercise.webapi
+
+  fph.exercise.webapi:
+    image: sharad/fph-exercise-webapi:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: Exercise.WebApi/Dockerfile
+  
