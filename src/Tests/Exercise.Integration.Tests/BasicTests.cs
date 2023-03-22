@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
+using Xunit;
 
 namespace Exercise.Integration.Tests;
 
-public class BasicTests
-    : IClassFixture<WebApplicationFactory<Program>>
+public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly WebApplicationFactory<Program> _factory;
 
