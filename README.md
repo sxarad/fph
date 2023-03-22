@@ -54,4 +54,6 @@ The web app is the functional test project. You can run the web app.
 # Tests
 
 * `Exercise.Unit.Tests` implements unit tests for the important parts of the business logic
+* `Exercise.Integration.Tests` implements the integration tests using `WebApplicationFactory`
+* `Exercise.WebApp` is the function test project
 
